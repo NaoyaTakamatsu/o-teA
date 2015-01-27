@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+	        <meta charset="utf-8">
+	        <title>O-tea</title>
+	        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+		<link rel="stylesheet" href="css/flexslider.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="icon" href="images/otea_favicon.png" type="image/x-icon">
+		<script src="http://code.jquery.com/jquery-1.10.0.js"></script>
+	        <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+	        <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+	        <script type="text/javascript" src="js/o-tea.js"></script>
+		<style>
+
+		</style>
+	</head>
+	<body>
+		<!----home---------------------------->
+		<div id="home" data-role="page">
+			<div data-role="header" data-theme="c">
+				<h1><a href="index.html" id="logo"><img src="images/o-tealogo.png"></a></h1>
+				<a href="#dialog_menu" class="ui-btn-right" data-role="button" data-transition="slidedown" data-icon="bars" data-iconpos="notext"></a>
+			</div>
+			<!-----スライドショー---------------->
+			<div class="flexslider">
+				<ul class="slides">
+					<li><img src="images/cafe_top.jpg"></li>
+					<li><img src="images/cafedeat.jpg"></li>
+					<li><img src="images/komarilady.jpg"></li>
+				</ul>
+			</div>
+
+			<div data-role="content">
+			<h2>ようこそO-teaへ</h2>
+                            <p>O-teaとは、facebookの友達の中から<br><strong>気になる人を気軽に</strong>お茶に誘えるサービスです。</p>
+               
+         		      <a href="#mypage" data-role="button">facebookログイン</a>
+				<!---トップリストビュー----------------------------->
+				<!--<ul data-role="listview">
+					<li class="toplist_news">
+						<p>2013.01.03</p>
+						採用情報を更新しました。
+					</li>
+					<li class="toplist_news">
+						<a href="http://sumaho-design.com" target="_blank">
+							<p>2013.01.02</p>
+							新商品の販売開始に伴いキャンペーン実施中です。
+						</a>
+					</li>
+					<li class="toplist_news">
+						<p>2013.01.01</p>
+						ホームページをリニューアルしました。
+					</li>
+					<li class="toplist_menu1"><a href="#page1">sample page1</a></li>
+					<li class="toplist_menu1"><a href="#page2">sample page2</a></li>
+					<li class="toplist_menu1"><a href="#page3">sample page3</a></li>
+					<li class="toplist_menu1"><a href="#page4">sample page4</a></li>
+					<li class="toplist_menu1"><a href="#page5">sample page5</a></li>
+					<li class="toplist_menu1"><a href="#page6">sample page6</a></li>
+					<li class="toplist_menu2"><a href="http://sumaho-design.com" target="_blank">外部リンク</a></li>
+					<li class="toplist_menu2"><a href="http://sumaho-design.com" target="_blank">外部リンク</a></li>
+				</ul>-->
+			</div>
+			<div class="pagetop">
+				<a href="#home"><img src="images/pagetop.png"></a>
+			</div>			
+			<div id="footer">
+				Copyright(C) NSKY All rights reserved.
+			</div>
+		</div><!-----home end-------------->
+
+
+		<!----mypage---------------------------->
+		<div id="mypage" data-role="page">
+				  <!--1申請時のダイアログ風のポップアップを準備-->
+					  <div id="popup_sinsei" data-role="popup" data-overlay-theme="b" style="max-width:500px;">
+					    <div data-role="header" data-theme="b">
+					      <h1 style="text-shadow:none;">申請画面</h1>
+					    </div> 
+					    <div role="main" class="ui-content">
+					      <p>申請状態を選択してください</p>
+					        <a href="#mypage" data-role="button" data-theme="e" data-icon="star" data-inline="true">申請する</a>
+					<a href="#mypage" data-role="button" data-theme="b" data-icon="minus" data-inline="true">申請を取り消す</a>
+					<a href="#mypage" data-role="button" data-theme="c" data-icon="back" data-inline="true">閉じる</a>
+					    </div>
+					  </div>
+					  <!--2お知らせのダイアログ風のポップアップを準備-->
+					  <div id="popup_osirase" data-role="popup" data-overlay-theme="b" style="max-width:500px;">
+					    <div data-role="header" data-theme="b">
+					      <h1 style="text-shadow:none;">お知らせ</h1>
+					    </div> 
+					    <div role="main" class="ui-content">
+					      <p>大政絢さんとO-teAフレンドになりました!!</p>
+					        <a href="#mypage" data-role="button" data-theme="c" data-icon="back" data-inline="true">閉じる</a>
+					    </div>
+					  </div>
+			<div data-role="header" data-theme="c">
+				<h1><a href="index.html" id="logo"><img src="images/o-tealogo.png"></a></h1>
+				<a href="#dialog_menu" class="ui-btn-right" data-role="button" data-transition="slidedown" data-icon="bars" data-iconpos="notext"></a>
+			</div>
+			<div data-role="content">
+			<h2>Profile</h2>
+				<ul class="small-image-list">
+                                <li>
+                                    <a href="mypage.html"><img src="images/samune_naoya.jpg" alt="" class="left" style="width:80px;height:80px;"/></a>
+                                    <h4>高松直也</h4>
+                                    <p>株式会社リクルートホールディングス</p>
+                                </li>
+                                <li>
+                                <a href="#popup_osirase" id="modal-open" data-rel="popup" style="color:#283121;cursor: pointer; text-decoration: none;">お知らせ</a><a id="new_count" style="margin:60px;color: #ff905a;">1</a>
+                                    <!--<img src="images/information.png" style="position:relative;top:2px;width:18px;height:18px;" /><a id="dialog_osirase" class="button-link" style="color:#283121;cursor: pointer; text-decoration: none;">　お知らせ</a><a id="new_count" style="margin:60px;color: #ff905a;">1</a>-->
+
+                                    <!---リストビュー---------------->
+					
+                                    <!-- ここからモーダルウィンドウ -->
+                                    <!--<div id="modal-content" style="width:25%;
+                                         margin:0;
+                                         padding:10px 20px;
+                                         border:2px solid #aaa;
+                                         background:#fff;
+                                         position:fixed;
+                                         display:none !important;
+                                         z-index:2;">-->
+                                        <!-- モーダルウィンドウのコンテンツ開始 -->
+                                        <!--<p><strong>佐々木希</strong>さんとoteafriendになりました!!</p>
+                                        <p><a id="modal-close" class="button-link" style="cursor: pointer;text-decoration: none;">閉じる</a></p>-->
+                                        <!-- モーダルウィンドウのコンテンツ終了 
+                                    </div>-->
+                                </li>
+                                <!--<li>
+                                    <img src="images/friend.png" style="position:relative;top:2px;width:18px; height:18px;"/><a href="#otfriends" style="cursor: pointer; text-decoration: none;">　O-teAフレンズ</a>
+                                </li>-->
+                            </ul>
+                            <h2>Friends</h2>
+			<!--リストビュー-->
+			<ul data-role="listview" data-filter="true">
+					    <li><a href="#popup_sinsei" data-rel="popup" ><img src="images/sasaki.png">
+					        <h3>佐々木希</h3><p>女優</p><p id="sinseimae" >申請前</p></a></li>
+					    <li><a href="#popup_sinsei" data-rel="popup"><img src="images/kiritani.png">
+					        <h3>桐谷美鈴</h3><p>女優</p><p id="sinseizumi">申請済み</p></a></li>
+					    <li><a href="#popup_sinsei" data-rel="popup"><img src="images/oomasa.jpeg">
+					        <h3>大政絢</h3><p>女優</p><p id="ryouomoi">両想い</p></a></li>
+					    <li><a href="#popup_sinsei" data-rel="popup"><img src="images/mituki.jpeg">
+					        <h3>山本美月</h3><p>女優</p><p id="sinseizumi">申請済み</p></a></li>
+					</ul>
+			</div>
+			<div class="pagetop">
+				<a href="#mypage"><img src="images/pagetop.png"></a>
+			</div>			
+			<div id="footer">
+				Copyright(C) NSKY All rights reserved.
+			</div>
+		</div><!-----mypage end-------------->
+
+
+		<!----demand---------------------------->
+		<div id="demand" data-role="page">
+			<div data-role="header" data-theme="c">
+				<h1><a href="index.html" id="logo"><img src="images/o-tealogo.png"></a></h1>
+				<a href="#dialog_menu" class="ui-btn-right" data-role="button" data-transition="slidedown" data-icon="bars" data-iconpos="notext"></a>
+			</div>
+			<div data-role="content">
+				<h2>O-teafriends申請画面</h2>
+			</div>
+			<div class="pagetop">
+				<a href="#page2"><img src="images/pagetop.png"></a>
+			</div>			
+			<div id="footer">
+				Copyright(C) sample2 All rights reserved.
+			</div>
+		</div><!-----demand end-------------->
+
+
+		<!----otfriends---------------------------->
+		<div id="otfriends" data-role="page">
+			<div data-role="header" data-theme="c">
+				<h1><img src="images/sample2_1.png"></h1>
+				<a href="#dialog_menu" class="ui-btn-right" data-role="button" data-transition="slidedown" data-icon="bars" data-iconpos="notext"></a>
+			</div>
+			<div data-role="content">
+				<img class="img_w" src="images/img3.png">
+				<p>このページはsample page3です。<br>自由にカスタマイズして使ってください。</p>
+				<p>ボタン作成方法については下記の「ボタンについて」を参考にしてみてください。</p>
+				<a href="http://sumaho-design.com/jqm3.html" target="_blank" data-role="button">ボタンについて</a>
+			</div>
+			<div class="pagetop">
+				<a href="#page3"><img src="images/pagetop.png"></a>
+			</div>			
+			<div id="footer">
+				Copyright(C) sample2 All rights reserved.
+			</div>
+		</div><!-----page3 end-------------->
+
+
+		<!----page4---------------------------->
+		<div id="page4" data-role="page">
+			<div data-role="header" data-theme="c">
+				<h1><img src="images/sample2_1.png"></h1>
+				<a href="#dialog_menu" class="ui-btn-right" data-role="button" data-transition="slidedown" data-icon="bars" data-iconpos="notext"></a>
+			</div>
+			<div data-role="content">
+				<img class="img_w" src="images/img1.png">
+				<p>このページはsample page4です。<br>自由にカスタマイズして使ってください。</p>
+				<p>jQueryMobileのコンポーネントについては下記の「コンポーネントについて」を参考にしてみてください。</p>
+				<a href="http://sumaho-design.com/jqm4.html" target="_blank" data-role="button">コンポーネントについて</a>
+			</div>
+			<div class="pagetop">
+				<a href="#page4"><img src="images/pagetop.png"></a>
+			</div>			
+			<div id="footer">
+				Copyright(C) sample2 All rights reserved.
+			</div>
+		</div><!-----page4 end-------------->
+
+
+		<!----page5---------------------------->
+		<div id="page5" data-role="page">
+			<div data-role="header" data-theme="c">
+				<h1><img src="images/sample2_1.png"></h1>
+				<a href="#dialog_menu" class="ui-btn-right" data-role="button" data-transition="slidedown" data-icon="bars" data-iconpos="notext"></a>
+			</div>
+			<div data-role="content">
+				<img class="img_w" src="images/img2.png">
+				<p>このページはsample page5です。<br>自由にカスタマイズして使ってください。</p>
+				<p>jQueryプラグインについては下記の「jQueryプラグインについて」を参考にしてみてください。</p>
+				<a href="http://sumaho-design.com/jqm-plugin/" target="_blank" data-role="button">jQueryプラグインについて</a>
+			</div>
+			<div class="pagetop">
+				<a href="#page5"><img src="images/pagetop.png"></a>
+			</div>			
+			<div id="footer">
+				Copyright(C) sample2 All rights reserved.
+			</div>
+		</div><!-----page5 end-------------->
+
+
+		<!----page6---------------------------->
+		<div id="page6" data-role="page">
+			<div data-role="header" data-theme="c">
+				<h1><img src="images/sample2_1.png"></h1>
+				<a href="#dialog_menu" class="ui-btn-right" data-role="button" data-transition="slidedown" data-icon="bars" data-iconpos="notext"></a>
+			</div>
+			<div data-role="content">
+				<img class="img_w" src="images/img3.png">
+				<p>このページはsample page6です。<br>自由にカスタマイズして使ってください。</p>
+				<p>テーマローラーについては下記の「テーマローラーについて」を参考にしてみてください。</p>
+				<a href="http://sumaho-design.com/jqm-themeroller.html" target="_blank" data-role="button">テーマローラーについて</a>
+			</div>
+			<div class="pagetop">
+				<a href="#page6"><img src="images/pagetop.png"></a>
+			</div>			
+			<div id="footer">
+				Copyright(C) sample2 All rights reserved.
+			</div>
+		</div><!-----page6 end-------------->
+
+
+		<!--ダイアログメニュー-->
+		<div id="dialog_menu" data-role="dialog">
+				<ul data-role="listview">
+					<a href="#mypage" data-role="button" data-icon="arrow-r" data-iconpos="right">MyPage</a>
+					<a href="#demand" data-role="button" data-icon="arrow-r" data-iconpos="right">O-teaFriendsを作る</a>
+					<a href="#otfriends" data-role="button" data-icon="arrow-r" data-iconpos="right">O-teaFriendsリスト</a>
+					<a href="#page4" data-role="button" data-icon="arrow-r" data-iconpos="right">sample page4</a>
+					<a href="#page5" data-role="button" data-icon="arrow-r" data-iconpos="right">sample page5</a>
+					<a href="#page6" data-role="button" data-icon="arrow-r" data-iconpos="right">sample page6</a>
+					<a href="#home" data-role="button" data-theme="b" data-icon="home" data-inline="true">ホーム</a>
+					<a href="#" data-role="button" data-theme="b" data-rel="back" data-icon="delete" data-inline="true">閉じる</a>
+				</ul>
+		</div><!--ダイアログメニュー end-->
+		<!--申請ダイアログメニュー-->
+		<div id="dialog_sinsei" data-role="dialog">
+				<h2 id="sinsei_dialog">申請状態を選択</h2>
+				<ul data-role="listview">
+					<a href="#mypage" data-role="button" data-theme="b" data-icon="star" data-inline="true">申請する</a>
+					<a href="#mypage" data-role="button" data-theme="b" data-icon="minus" data-inline="true">申請を取り消す</a>
+					<a href="#" data-role="button" data-theme="b" data-rel="back" data-icon="delete" data-inline="true">閉じる</a>
+				</ul>
+		</div><!--ダイアログメニュー end-->
+		<!--お知らせダイアログメニュー-->
+		<div id="dialog_osirase" data-role="dialog">
+				<h4 id="sinsei_dialog">大政絢さんとO-teAフレンドになりました!!</h4>
+				<ul data-role="listview">
+					<a href="#mypage" data-role="button" data-theme="b" data-icon="back" data-inline="true">OK</a>
+				</ul>
+		</div><!--ダイアログメニュー end-->
+	</body>
+</html>
+

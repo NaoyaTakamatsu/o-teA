@@ -1,0 +1,280 @@
+﻿/*--ページ、ヘッダー、コンテンツ--*/
+.ui-page{
+	background:#ffffff;
+}
+.ui-header{
+	background:#73E0B8;
+	border:1px solid #ffffff;
+}
+.ui-header img{
+	width:40%;
+}
+.ui-header .ui-title{
+	color:#ffffff;
+	text-align:left;
+	margin:1.0em 5% 0.8em;
+}
+.ui-header .ui-btn-icon-notext{
+	top:20px;
+}
+.ui-header .ui-btn-right{
+	right:10px;
+}
+.ui-content{
+	background:#ffffff;
+}
+
+/*---スライドショー---*/
+.flexslider{
+    border:none;
+    box-shadow:none;
+}
+
+/*---下層ページの画像---*/
+.img_w{
+	width:100%;
+}
+
+/*--ページトップへ--*/
+.pagetop{
+	padding:10px 5px;
+	text-align:right;
+	background:#efefef;
+}
+/*--フッター--*/
+#footer{
+	text-align:center;
+	padding:20px 0px;
+	font-size:11px;
+	background:#73E0B8;
+	text-shadow:none;
+}
+
+
+
+/*------------リスト・ボタン系-----------------*/
+/*--文字省略なし(ヘッダー・フッター含む)---*/
+.ui-header .ui-title,
+.ui-footer .ui-title,
+.ui-btn-inner,
+.ui-li-heading,
+.ui-li .ui-btn-text a.ui-link-inherit,
+.ui-li-desc
+{
+	overflow: visible;
+	white-space: normal;
+}
+
+/*-ボタンコーナー部分-*/
+.ui-btn-corner-all{
+	border-radius:5px;
+}
+/*-ボタンサイズ-*/
+.ui-btn-inner{
+	padding:5px 20px;
+}
+/*-ヘッダー ボタンコーナー部分-*/
+.ui-header .ui-btn-corner-all{
+	border-radius:15px;
+}
+/*-リストビュー リスト名部分-*/
+.ui-li .ui-btn-text a.ui-link-inherit{
+	font-size:13px;
+}
+/*.ui-li-has-thumb .ui-btn-inner a.ui-link-inherit{
+	min-height: 20px;
+	padding-left:60px;
+}*/
+/*-リストビュー サムネイル部分-*/
+.ui-listview .ui-li-thumb {
+	max-height: 76px;
+	max-width: 76px;
+	left: 8px;
+	/*right:8px;*/
+	top:  12px; 
+}
+.ui-listview .ui-li-button {
+	max-height: 66px;
+	max-width: 66px;
+	left: 20px;
+	top:  20px; 
+}
+
+/*--トップ　リストビュー(ニュース)--*/
+li.toplist_news{
+	background:#ffffff;
+	font-size:13px;
+	line-height:13px;
+}
+li.toplist_news:hover{
+	font-weight:normal;
+}
+li.toplist_news.ui-btn-active{
+	border-color:#c0c0c0;
+	text-shadow:none;
+}
+li.toplist_news.ui-btn-active:visited,
+li.toplist_news.ui-btn-active:hover,
+li.toplist_news.ui-btn-active a.ui-link-inherit{
+	color:#5994bf;
+}
+li.toplist_news p{
+	font-size:11px;
+	font-weight:bold;
+}
+li.toplist_news.ui-btn-up-c{
+	font-weight:100;
+}
+
+/*--トップ　リストビュー(メニュー)の背景色、タップ時--*/
+li.toplist_menu1{
+	background:#dcdcdc;
+}
+li.toplist_menu2{
+	background:#efefef;
+}
+
+.toplist_menu1.ui-btn-active{
+	border-color:#c0c0c0;
+	text-shadow:none;
+}
+li.toplist_menu1.ui-btn-active:visited,
+li.toplist_menu1.ui-btn-active:hover,
+li.toplist_menu1.ui-btn-active a.ui-link-inherit{
+	color:#5994bf;
+}
+li.toplist_menu2.ui-btn-active{
+	border-color:#c0c0c0;
+	text-shadow:none;
+}
+li.toplist_menu2.ui-btn-active:visited,
+li.toplist_menu2.ui-btn-active:hover,
+li.toplist_menu2.ui-btn-active a.ui-link-inherit{
+	color:#5994bf;
+}
+ul.small-image-list li {
+    overflow: hidden;
+    margin: 30px;
+    margin-bottom: 1.5em; 
+}
+
+ul.small-image-list li a:hover{
+    color:#ee3e52;
+}
+
+/*font系*/
+h1,h2,h3,h4 {
+    color: #34D298/*#DB6565*//*#007897*/;
+    font-weight: normal;
+}
+
+h1,h2 {
+    //text-transform: lowercase;
+}
+
+h2 {
+    font-size: 1.6em;
+    letter-spacing: -1px;
+    margin-bottom: 1em;
+}
+
+h3,h4 {
+    color: #283121;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.8em;
+}
+
+h4 {
+    font-size: 1em;
+}
+strong {
+    color: #ff905a;
+}
+#sinseimae{
+	color:#ffffff;
+	display: inline-block;
+    padding: 5px;
+    background-color: #34D298/*#DB6565*//*#007b9d*/;
+    /*background-image: -moz-linear-gradient(top, #008dad, #007b9d);
+    background-image: -webkit-linear-gradient(top, #008dad, #007b9d);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#008dad), to(#007b9d));
+    background-image: -ms-linear-gradient(top, #008dad, #007b9d);
+    background-image: -o-linear-gradient(top, #008dad, #007b9d);
+    background-image: linear-gradient(top, #008dad, #007b9d);*/
+    //border-radius: 10px;
+    //text-transform: lowercase;
+    text-decoration: none;
+    text-shadow:none;
+    /*color: #fff;*/
+    font-size: 1.2em;
+    //font-weight: lighter;
+    letter-spacing: 2px;
+    border: solid 1px #34D298/*#DB6565*//*#006e8b*/;
+    //box-shadow: inset 0px 0px 0px 1px #18a8c8;
+}
+#sinseizumi{
+	color:#ffffff;
+	display: inline-block;
+    padding: 5px;
+    background-color: #326779/*#DB6565*//*#007b9d*/;
+    /*background-image: -moz-linear-gradient(top, #008dad, #007b9d);
+    background-image: -webkit-linear-gradient(top, #008dad, #007b9d);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#008dad), to(#007b9d));
+    background-image: -ms-linear-gradient(top, #008dad, #007b9d);
+    background-image: -o-linear-gradient(top, #008dad, #007b9d);
+    background-image: linear-gradient(top, #008dad, #007b9d);*/
+    //border-radius: 10px;
+    //text-transform: lowercase;
+    text-decoration: none;
+    text-shadow:none;
+    /*color: #fff;*/
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    border: solid 1px #326779/*#DB6565*//*#006e8b*/;
+    //box-shadow: inset 0px 0px 0px 1px #18a8c8;
+}
+#ryouomoi{
+	color:#ffffff;
+	display: inline-block;
+    padding: 5px;
+    background-color: #ff905a/*#DB6565*//*#007b9d*/;
+    /*background-image: -moz-linear-gradient(top, #008dad, #007b9d);
+    background-image: -webkit-linear-gradient(top, #008dad, #007b9d);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#008dad), to(#007b9d));
+    background-image: -ms-linear-gradient(top, #008dad, #007b9d);
+    background-image: -o-linear-gradient(top, #008dad, #007b9d);
+    background-image: linear-gradient(top, #008dad, #007b9d);*/
+    //border-radius: 10px;
+    //text-transform: lowercase;
+    text-decoration: none;
+    text-shadow:none;
+    /*color: #fff;*/
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    border: solid 1px #ff905a/*#DB6565*//*#006e8b*/;
+    //box-shadow: inset 0px 0px 0px 1px #18a8c8
+}
+#sinsei_dialog{
+	color: #ffffff;
+	text-shadow:none;
+}
+/*ダイアログを透過させる*/
+.ui-dialog-background {
+    opacity: 0.5;
+    display: block !important;
+    -webkit-transition: opacity 0.5s ease-in;
+}
+ 
+.ui-dialog-background.pop.in {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s ease-in;
+}
+ 
+.ui-dialog {
+    min-height: 100% !important;
+    background: transparent !important;
+}
