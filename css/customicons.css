@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*facebookログイン用のアイコン*/
+.ui-icon-fbicon { background: url("images/fblogiomini.png") no-repeat rgba(0, 0, 0, 0.3); }
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-resolution:240dpi) {
+.ui-icon-fbicon { background: url("images/fblogin.png") no-repeat rgba(0, 0, 0, 0.9); background-size: 18px 18px; -webkit-background-size: 18px 18px; -moz-background-size: 18px 18px; -ms-background-size: 18px 18px; -o-background-size: 18px 18px; }
+}
+
+
+.ui-content .ui-listview { margin: 0 -15px; }
+.ui-icon-menu1 { background: url("images/img_1.png") no-repeat rgba(0, 0, 0, 0.3); }
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-resolution:240dpi) {
+.ui-icon-menu1 { background: url("images/img_1@2x.png") no-repeat rgba(0, 0, 0, 0.9); background-size: 18px 18px; -webkit-background-size: 18px 18px; -moz-background-size: 18px 18px; -ms-background-size: 18px 18px; -o-background-size: 18px 18px; }
+}
+.ui-icon-menu2 { background: url("images/img_2.png") no-repeat rgba(0, 0, 0, 0.3); }
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-resolution:240dpi) {
+.ui-icon-menu2 { background: url("images/img_2@2x.png") no-repeat rgba(0, 0, 0, 0.9); background-size: 18px 18px; -webkit-background-size: 18px 18px; -moz-background-size: 18px 18px; -ms-background-size: 18px 18px; -o-background-size: 18px 18px; }
+}
+.ui-icon-menu3 { background: url("images/img_3.png") no-repeat rgba(0, 0, 0, 0.3); }
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-resolution:240dpi) {
+.ui-icon-menu3 { background: url("images/img_3@2x.png") no-repeat rgba(0, 0, 0, 0.9); background-size: 18px 18px; -webkit-background-size: 18px 18px; -moz-background-size: 18px 18px; -ms-background-size: 18px 18px; -o-background-size: 18px 18px; }
+}
+
+
+

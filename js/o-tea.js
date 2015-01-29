@@ -31,13 +31,18 @@ jQuery(function ($){
            	//$("#new_count").remove(); 
 	});
 });
-//ダイアログ透過
-/*jQuery(document).ready(function ($){
-    $('div[data-role="dialog"]').live('pagebeforeshow', function(e, ui) {
-    ui.prevPage.addClass("ui-dialog-background ");
+//申請ボタンの処理
+$(document).ready( function() {
+	//初期状態は0申請無し
+	var sinsei_jyoutai=0;
+        $("#sinsei_button").click(function(){
+            alert('申請します!!');
+            //申請済みは1
+	var sinsei_jyoutai=1;
+        });
+        $("#torikeshi_button").click(function(){
+            alert('取り消します!!');
+            //申請済みは0
+	var sinsei_jyoutai=0;
+        });
     });
- 
-    $('div[data-role="dialog"]').live('pagehide', function(e, ui) {
-    $(".ui-dialog-background ").removeClass("ui-dialog-background ");
-    });
-});*/

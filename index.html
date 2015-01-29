@@ -5,6 +5,7 @@
 	        <title>O-tea</title>
 	        <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+		<link rel="stylesheet" href="css/customicons.css">
 		<link rel="stylesheet" href="css/flexslider.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="icon" href="images/otea_favicon.png" type="image/x-icon">
@@ -33,10 +34,10 @@
 			</div>
 
 			<div data-role="content">
-			<h2>ようこそO-teaへ</h2>
-                            <p>O-teaとは、facebookの友達の中から<br><strong>気になる人を気軽に</strong>お茶に誘えるサービスです。</p>
-               
-         		      <a href="#mypage" data-role="button">facebookログイン</a>
+			<h2>ようこそO-teAへ</h2>
+                            <p>O-teAとは、<br>facebookの友達の中から気になる人を<br><strong>相手に内緒で</strong>お茶に誘えるサービスです。</p>
+         		      <a href="#mypage" data-role="button" data-icon="fbicon" data-iconpos="left">Facebookログイン</a>
+         		      <!--<a href="#mypage" data-role="button"　class="sb text facebook">Facebookログイン</a>-->
 				<!---トップリストビュー----------------------------->
 				<!--<ul data-role="listview">
 					<li class="toplist_news">
@@ -81,8 +82,8 @@
 					    </div> 
 					    <div role="main" class="ui-content">
 					      <p>申請状態を選択してください</p>
-					        <a href="#mypage" data-role="button" data-theme="e" data-icon="star" data-inline="true">申請する</a>
-					<a href="#mypage" data-role="button" data-theme="b" data-icon="minus" data-inline="true">申請を取り消す</a>
+					        <a href="#mypage" data-role="button" id="sinsei_button" data-theme="e" data-icon="star" data-inline="true">申請する</a>
+					<a href="#mypage" data-role="button" id="torikeshi_button" data-theme="b" data-icon="minus" data-inline="true">申請を取り消す</a>
 					<a href="#mypage" data-role="button" data-theme="c" data-icon="back" data-inline="true">閉じる</a>
 					    </div>
 					  </div>
@@ -101,12 +102,11 @@
 				<a href="#dialog_menu" class="ui-btn-right" data-role="button" data-transition="slidedown" data-icon="bars" data-iconpos="notext"></a>
 			</div>
 			<div data-role="content">
-			<h2>Profile</h2>
+			<h2>MyPage</h2>
 				<ul class="small-image-list">
                                 <li>
                                     <a href="mypage.html"><img src="images/samune_naoya.jpg" alt="" class="left" style="width:80px;height:80px;"/></a>
                                     <h4>高松直也</h4>
-                                    <p>株式会社リクルートホールディングス</p>
                                 </li>
                                 <li>
                                 <a href="#popup_osirase" id="modal-open" data-rel="popup" style="color:#283121;cursor: pointer; text-decoration: none;">お知らせ</a><a id="new_count" style="margin:60px;color: #ff905a;">1</a>
@@ -137,13 +137,13 @@
 			<!--リストビュー-->
 			<ul data-role="listview" data-filter="true">
 					    <li><a href="#popup_sinsei" data-rel="popup" ><img src="images/sasaki.png">
-					        <h3>佐々木希</h3><p>女優</p><p id="sinseimae" >申請前</p></a></li>
+					        <h3>佐々木希</h3><p id="sinseimae" >申請前</p></a></li>
 					    <li><a href="#popup_sinsei" data-rel="popup"><img src="images/kiritani.png">
-					        <h3>桐谷美鈴</h3><p>女優</p><p id="sinseizumi">申請済み</p></a></li>
+					        <h3>桐谷美鈴</h3><p id="sinseizumi">申請済み</p></a></li>
 					    <li><a href="#popup_sinsei" data-rel="popup"><img src="images/oomasa.jpeg">
-					        <h3>大政絢</h3><p>女優</p><p id="ryouomoi">両想い</p></a></li>
+					        <h3>大政絢</h3><p id="ryouomoi">両想い</p></a></li>
 					    <li><a href="#popup_sinsei" data-rel="popup"><img src="images/mituki.jpeg">
-					        <h3>山本美月</h3><p>女優</p><p id="sinseizumi">申請済み</p></a></li>
+					        <h3>山本美月</h3><p id="sinseizumi">申請済み</p></a></li>
 					</ul>
 			</div>
 			<div class="pagetop">
