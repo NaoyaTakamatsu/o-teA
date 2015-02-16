@@ -9,7 +9,11 @@
 		<link rel="stylesheet" href="css/flexslider.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="icon" href="images/otea_favicon.png" type="image/x-icon">
-		<script src="http://code.jquery.com/jquery-1.10.0.js"></script>
+		<!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
+		<!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+		<!--<link rel="stylesheet" href="css/font-awesome.css" />-->
+		<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
 	        <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
 	        <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
 	        <script type="text/javascript" src="js/o-tea.js"></script>
@@ -24,6 +28,15 @@
 				<h1><a href="index.html" id="logo"><img src="images/o-tealogo.png"></a></h1>
 				<a href="#dialog_menu" class="ui-btn-right" data-role="button" data-transition="slidedown" data-icon="bars" data-iconpos="notext"></a>
 			</div>
+			<!--画面全体の画像-->
+			<!--<div class="top-wrapper">
+			      <h1>知人が友達になる。</h1>
+			      <p>progateは無料のプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
+			      <a href="" class="btn signup">新規登録はこちら</a>
+			      <p>or sign up with</p>
+			      <a href="" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
+			      <a href="" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
+			  </div>-->
 			<!-----スライドショー---------------->
 			<div class="flexslider">
 				<ul class="slides">
@@ -34,9 +47,10 @@
 			</div>
 
 			<div data-role="content">
-			<h2>ようこそO-teAへ</h2>
-                            <p>O-teAとは、<br>facebookの友達の中から気になる人を<br><strong>相手に内緒で</strong>お茶に誘えるサービスです。</p>
-         		      <a href="#mypage" data-role="button" data-icon="fbicon" data-iconpos="left">Facebookログイン</a>
+			<h2 id="top_h2">Acquaintance change Friend!!</h2>
+                            <p id="top_p">O-teAは、Facebookの友達を<br><strong>相手に内緒</strong>でお茶に誘えるサービスです。</p>
+         		      <!--<a href="#mypage" data-role="button" data-icon="fbicon" data-iconpos="left">Facebookログイン</a>-->
+         		      <a href="#mypage" class="btn facebook" id="fbrogin" style="color:white;text-decoration: none;text-shadow:none;display:itext-align:center;"><span class="fa fa-facebook"></span>Facebookログイン</a>
          		      <!--<a href="#mypage" data-role="button"　class="sb text facebook">Facebookログイン</a>-->
 				<!---トップリストビュー----------------------------->
 				<!--<ul data-role="listview">
@@ -81,12 +95,13 @@
 					      <h1 style="text-shadow:none;">申請画面</h1>
 					    </div> 
 					    <div role="main" class="ui-content">
-					      <p>申請状態を選択してください</p>
+					      <p id="sinsei_condition">さんの申請状態を選択してください</p>
 					        <a href="#mypage" data-role="button" id="sinsei_button" data-theme="e" data-icon="star" data-inline="true">申請する</a>
 					<a href="#mypage" data-role="button" id="torikeshi_button" data-theme="b" data-icon="minus" data-inline="true">申請を取り消す</a>
-					<a href="#mypage" data-role="button" data-theme="c" data-icon="back" data-inline="true">閉じる</a>
+					<a href="#mypage" data-role="button" id="closed" data-theme="c" data-icon="back" data-inline="true">閉じる</a>
 					    </div>
 					  </div>
+
 					  <!--2お知らせのダイアログ風のポップアップを準備-->
 					  <div id="popup_osirase" data-role="popup" data-overlay-theme="b" style="max-width:500px;">
 					    <div data-role="header" data-theme="b">
@@ -109,7 +124,7 @@
                                     <h4>高松直也</h4>
                                 </li>
                                 <li>
-                                <a href="#popup_osirase" id="modal-open" data-rel="popup" style="color:#283121;cursor: pointer; text-decoration: none;">お知らせ</a><a id="new_count" style="margin:60px;color: #ff905a;">1</a>
+                                <a href="#popup_osirase" id="modal-open" data-rel="popup" style="color:#283121;cursor: pointer; text-decoration: none;">お知らせ</a><a id="new_count" style="margin:60px;color: #F56363;">1</a>
                                     <!--<img src="images/information.png" style="position:relative;top:2px;width:18px;height:18px;" /><a id="dialog_osirase" class="button-link" style="color:#283121;cursor: pointer; text-decoration: none;">　お知らせ</a><a id="new_count" style="margin:60px;color: #ff905a;">1</a>-->
 
                                     <!---リストビュー---------------->
@@ -136,13 +151,13 @@
                             <h2>Friends</h2>
 			<!--リストビュー-->
 			<ul data-role="listview" data-filter="true">
-					    <li><a href="#popup_sinsei" data-rel="popup" ><img src="images/sasaki.png">
+					    <li class="friend_list"><a href="#popup_sinsei" data-rel="popup" ><img src="images/sasaki.png">
 					        <h3>佐々木希</h3><p id="sinseimae" >申請前</p></a></li>
-					    <li><a href="#popup_sinsei" data-rel="popup"><img src="images/kiritani.png">
+					    <li class="friend_list"><a href="#popup_sinsei" data-rel="popup"><img src="images/kiritani.png">
 					        <h3>桐谷美鈴</h3><p id="sinseizumi">申請済み</p></a></li>
-					    <li><a href="#popup_sinsei" data-rel="popup"><img src="images/oomasa.jpeg">
+					    <li class="friend_list"><a href="#popup_sinsei" data-rel="popup"><img src="images/oomasa.jpeg">
 					        <h3>大政絢</h3><p id="ryouomoi">両想い</p></a></li>
-					    <li><a href="#popup_sinsei" data-rel="popup"><img src="images/mituki.jpeg">
+					    <li class="friend_list"><a href="#popup_sinsei" data-rel="popup"><img src="images/mituki.jpeg">
 					        <h3>山本美月</h3><p id="sinseizumi">申請済み</p></a></li>
 					</ul>
 			</div>
