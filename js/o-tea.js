@@ -72,7 +72,11 @@ $(".friend_list").click(function () {
             //alert($idname);
             //申請済みは1
             $("#sinsei_condition").html("さんの申請状態を選択してください");
-            $condition.html('<p id="sinseizumi" class="ui-li-desc">申請済み</p>');
+            //$(this).find('p').removeAttr('p');
+            //$condition.html(null);
+            $condition.text('申請済み');
+            $condition.css({"background":"#326779","border-color":"#326779"});
+            //$condition.html('<p id="sinseizumi" style="font-size:1.0em;">申請済み</p>');
             //$idname="sinseizumi";
             /*if($idname=="ryouomoi"){
             	//$idname="ryouomoi";
@@ -102,7 +106,9 @@ $(".friend_list").click(function () {
             //alert('取り消します!!');
             //申請済みは0
             $("#sinsei_condition").html("さんの申請状態を選択してください");
-            $condition.html('<p id="sinseimae">申請前</p>');
+            $condition.text('申請前');
+            $condition.css({"background":"#34D298","border-color":"#34D298"});
+            //$condition.html('<p id="sinseimae">申請前</p>');
             /*if($idname=="sinseizumi"){
 		$condition.html('<p id="sinseimae">申請前</p>');
 		//$idname="sinseimae";
