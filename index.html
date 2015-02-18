@@ -4,17 +4,21 @@
 	        <meta charset="utf-8">
 	        <title>O-tea</title>
 	        <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+		<!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />-->
 		<link rel="stylesheet" href="css/customicons.css">
 		<link rel="stylesheet" href="css/flexslider.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="icon" href="images/otea_favicon.png" type="image/x-icon">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 		<!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
 		<!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 		<!--<link rel="stylesheet" href="css/font-awesome.css" />-->
-		<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
-	        <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+		<!--<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+	           <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>-->
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
 	        <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
 	        <script type="text/javascript" src="js/o-tea.js"></script>
 		<style>
@@ -26,8 +30,10 @@
 		<div id="home" data-role="page">
 			<div data-role="header" data-theme="c">
 				<h1><a href="index.html" id="logo"><img src="images/o-tealogo.png"></a></h1>
-				<a href="#dialog_menu" class="ui-btn-right" data-role="button" data-transition="slidedown" data-icon="bars" data-iconpos="notext"></a>
+				<a href="#rightpanel" class="ui-btn-right" data-role="button" data-transition="slide" id="menu" data-icon="bars">Menu</a>
+				<!--<a href="#navPanel">Menu</a>-->
 			</div>
+
 			<!--画面全体の画像-->
 			<!--<div class="top-wrapper">
 			      <h1>知人が友達になる。</h1>
@@ -47,10 +53,18 @@
 			</div>
 
 			<div data-role="content">
-			<h2 id="top_h2">Acquaintance change Friend!!</h2>
+						<!--<div data-role="panel" id="navPanel">
+			    <ul data-role="listview">
+			        <li><a href="#">メニュー1</a></li>
+			        <li><a href="#">メニュー2</a></li>
+			        <li><a href="#">メニュー3</a></li>
+			    </ul>
+			</div>-->
+			<h2 id="top_h2">Acquaintance <br>change Friend!!</h2>
                             <p id="top_p">O-teAは、Facebookの友達を<br><strong>相手に内緒</strong>でお茶に誘えるサービスです。</p>
          		      <!--<a href="#mypage" data-role="button" data-icon="fbicon" data-iconpos="left">Facebookログイン</a>-->
          		      <a href="#mypage" class="btn facebook" id="fbrogin" style="color:white;text-decoration: none;text-shadow:none;display:itext-align:center;"><span class="fa fa-facebook"></span>Facebookログイン</a>
+         		      <p class="keikoku">※Facebook上に使用状況は公開されません。</p>
          		      <!--<a href="#mypage" data-role="button"　class="sb text facebook">Facebookログイン</a>-->
 				<!---トップリストビュー----------------------------->
 				<!--<ul data-role="listview">
@@ -96,9 +110,9 @@
 					    </div> 
 					    <div role="main" class="ui-content">
 					      <p id="sinsei_condition">さんの申請状態を選択してください</p>
-					        <a href="#mypage" data-role="button" id="sinsei_button" data-theme="e" data-icon="star" data-inline="true">申請する</a>
-					<a href="#mypage" data-role="button" id="torikeshi_button" data-theme="b" data-icon="minus" data-inline="true">申請を取り消す</a>
-					<a href="#mypage" data-role="button" id="closed" data-theme="c" data-icon="back" data-inline="true">閉じる</a>
+					        <a href="#mypage" data-role="button" id="sinsei_button" data-icon="heart" data-inline="true">申請する</a>
+					<a href="#mypage" data-role="button" id="torikeshi_button" data-icon="minus" data-inline="true">申請を取り消す</a>
+					<a href="#mypage" data-role="button" id="closed" data-theme="c" data-icon="delete" data-inline="true">閉じる</a>
 					    </div>
 					  </div>
 
@@ -109,12 +123,12 @@
 					    </div> 
 					    <div role="main" class="ui-content">
 					      <p>大政絢さんとO-teAフレンドになりました!!</p>
-					        <a href="#mypage" data-role="button" data-theme="c" data-icon="back" data-inline="true">閉じる</a>
+					        <a href="#mypage" data-role="button" data-theme="c" data-icon="delete" data-inline="true">閉じる</a>
 					    </div>
 					  </div>
 			<div data-role="header" data-theme="c">
 				<h1><a href="index.html" id="logo"><img src="images/o-tealogo.png"></a></h1>
-				<a href="#dialog_menu" class="ui-btn-right" data-role="button" data-transition="slidedown" data-icon="bars" data-iconpos="notext"></a>
+				<a href="#rightpanel" class="ui-btn-right" data-role="button" data-transition="slide" id="menu" data-icon="bars">Menu</a>
 			</div>
 			<div data-role="content">
 			<h2>MyPage</h2>
@@ -151,13 +165,13 @@
                             <h2>Friends</h2>
 			<!--リストビュー-->
 			<ul data-role="listview" data-filter="true">
-					    <li class="friend_list"><a href="#popup_sinsei" data-rel="popup" ><img src="images/sasaki.png">
+					    <li class="friend_list"><a href="#popup_sinsei" data-rel="popup" ><img src="images/sasaki.png" id="img_top">
 					        <h3>佐々木希</h3><p id="sinseimae" >申請前</p></a></li>
-					    <li class="friend_list"><a href="#popup_sinsei" data-rel="popup"><img src="images/kiritani.png">
+					    <li class="friend_list"><a href="#popup_sinsei" data-rel="popup"><img src="images/kiritani.png" id="img_top">
 					        <h3>桐谷美鈴</h3><p id="sinseizumi">申請済み</p></a></li>
-					    <li class="friend_list"><a href="#popup_sinsei" data-rel="popup"><img src="images/oomasa.jpeg">
+					    <li class="friend_list"><a href="#popup_sinsei" data-rel="popup"><img src="images/oomasa.jpeg" id="img_top">
 					        <h3>大政絢</h3><p id="ryouomoi">両想い</p></a></li>
-					    <li class="friend_list"><a href="#popup_sinsei" data-rel="popup"><img src="images/mituki.jpeg">
+					    <li class="friend_list"><a href="#popup_sinsei" data-rel="popup"><img src="images/mituki.jpeg" id="img_top">
 					        <h3>山本美月</h3><p id="sinseizumi">申請済み</p></a></li>
 					</ul>
 			</div>
@@ -174,7 +188,7 @@
 		<div id="demand" data-role="page">
 			<div data-role="header" data-theme="c">
 				<h1><a href="index.html" id="logo"><img src="images/o-tealogo.png"></a></h1>
-				<a href="#dialog_menu" class="ui-btn-right" data-role="button" data-transition="slidedown" data-icon="bars" data-iconpos="notext"></a>
+				<a href="#dialog_menu" class="ui-btn-right" data-role="button" data-transition="slidedown" data-icon="bars" data-iconpos="notext">Menu</a>
 			</div>
 			<div data-role="content">
 				<h2>O-teafriends申請画面</h2>
@@ -272,28 +286,29 @@
 		</div><!-----page6 end-------------->
 
 
-		<!--ダイアログメニュー-->
-		<div id="dialog_menu" data-role="dialog">
+		<!--パネルメニュー-->
+		<div id="rightpanel" data-role="panel" data-position="light" data-display="overlay">
 				<ul data-role="listview">
-					<a href="#mypage" data-role="button" data-icon="arrow-r" data-iconpos="right">MyPage</a>
-					<a href="#demand" data-role="button" data-icon="arrow-r" data-iconpos="right">O-teaFriendsを作る</a>
-					<a href="#otfriends" data-role="button" data-icon="arrow-r" data-iconpos="right">O-teaFriendsリスト</a>
-					<a href="#page4" data-role="button" data-icon="arrow-r" data-iconpos="right">sample page4</a>
+					<a href="#mypage" data-role="button" data-icon="arrow-r" data-iconpos="right" id="panel_menu">MyPage</a>
+					<!--<a href="#demand" data-role="button" data-icon="arrow-r" data-iconpos="right" id="panel_menu">O-teAFriendsを作る</a>-->
+					<a href="#otfriends" data-role="button" data-icon="arrow-r" data-iconpos="right" id="panel_menu">O-teAFriends</a>
+					<!--<a href="#page4" data-role="button" data-icon="arrow-r" data-iconpos="right">sample page4</a>
 					<a href="#page5" data-role="button" data-icon="arrow-r" data-iconpos="right">sample page5</a>
-					<a href="#page6" data-role="button" data-icon="arrow-r" data-iconpos="right">sample page6</a>
-					<a href="#home" data-role="button" data-theme="b" data-icon="home" data-inline="true">ホーム</a>
-					<a href="#" data-role="button" data-theme="b" data-rel="back" data-icon="delete" data-inline="true">閉じる</a>
+					<a href="#page6" data-role="button" data-icon="arrow-r" data-iconpos="right">sample page6</a>-->
+					<a href="#home" data-role="button" data-theme="b" data-icon="home" data-inline="true" id="home_button">ホーム</a>
+					<a href="#" data-role="button" data-theme="c" data-rel="back" data-icon="delete" data-inline="true" id="closed_botton
+					">閉じる</a>
 				</ul>
 		</div><!--ダイアログメニュー end-->
 		<!--申請ダイアログメニュー-->
-		<div id="dialog_sinsei" data-role="dialog">
+		<!--<div id="dialog_sinsei" data-role="dialog">
 				<h2 id="sinsei_dialog">申請状態を選択</h2>
 				<ul data-role="listview">
-					<a href="#mypage" data-role="button" data-theme="b" data-icon="star" data-inline="true">申請する</a>
-					<a href="#mypage" data-role="button" data-theme="b" data-icon="minus" data-inline="true">申請を取り消す</a>
-					<a href="#" data-role="button" data-theme="b" data-rel="back" data-icon="delete" data-inline="true">閉じる</a>
+					<a href="#mypage" data-role="button"  data-icon="heart" data-inline="true" id="sinsei_button">申請する</a>
+					<a href="#mypage" data-role="button"  data-icon="minus" data-inline="true" id="torikeshi_button">申請を取り消す</a>
+					<a href="#" data-role="button" data-rel="back" data-icon="delete" data-inline="true">閉じる</a>
 				</ul>
-		</div><!--ダイアログメニュー end-->
+		</div>--><!--ダイアログメニュー end-->
 		<!--お知らせダイアログメニュー-->
 		<div id="dialog_osirase" data-role="dialog">
 				<h4 id="sinsei_dialog">大政絢さんとO-teAフレンドになりました!!</h4>

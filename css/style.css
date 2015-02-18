@@ -5,6 +5,7 @@ body{
 
 a{
   text-decoration: none;
+  text-shadow:none;
 }
 .ui-page{
 	background:#ffffff;
@@ -57,6 +58,7 @@ a{
 	padding:20px 0px;
 	font-size:11px;
 	background:#73E0B8;
+           color:white;
 	text-shadow:none;
 }
 
@@ -357,3 +359,54 @@ strong {
     display: block;
     text-align: center;
 }
+#rightpanel{
+    background: white;
+}
+#home_button{
+    background: #73E0B8;
+    border-color: #73E0B8;
+}
+#closed_botton{
+    background: #73E0B8;
+}
+#sinsei_button{
+background: #F56363;
+color: #ffffff;
+text-decoration: none;
+text-shadow:none;
+}
+#torikeshi_button{
+background: #326779;
+color: #ffffff;
+text-decoration: none;
+text-shadow:none;
+}
+.keikoku{
+    font-size:13px;
+    text-decoration: none;
+    text-shadow:none;
+}
+#menu{
+    background-color: #58ca95;
+    border-color:#58ca95; 
+    color:white;
+    text-decoration: none;
+    text-shadow:none;
+}
+#img_top{
+    padding-top:10px; 
+}
+#panel_menu{
+    background: #58ca95;
+    color:white;
+    text-decoration: none;
+    text-shadow:none;
+}
+/*.ui-panel {
+    width: 10em;
+    min-height: 100%;
+    border-width: 0;
+    position: absolute;
+    top: 0;
+    display: block;
+}*/
